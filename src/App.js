@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 // import TextForm from './components/TextForm';
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom'
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route
+// } from 'react-router-dom'
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -36,12 +36,13 @@ function App() {
     <>
     <Navbar toggle={toggleMode} mode={mode} changebg1={changeBGColor1} changebg2={changeBGColor2} changebg3={changeBGColor3}/>
     <div className="container" >
-    <Router>
+    {/* <Router>
       <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/" element={<TextForm  mode={mode} heading="Please Enter your text here"/>} />
-      </Routes>
-    </Router>
+        <Route path="/about" element={<About />} /> */}
+        {/* <Route path="/" element={<TextForm  mode={mode} heading="Please Enter your text here"/>} /> */}
+        <TextForm  mode={mode} heading="Please Enter your text here"/>
+      {/* </Routes>
+    </Router> */}
     </div>
     </>
   );
