@@ -25,10 +25,10 @@ export default function TextForm(Props) {
             onChange={handleOnChange}
           ></textarea>
         </div>
-        <button onClick = {changeToUpCase} className="btn btn-primary mx-3">
+        <button onClick = {changeToUpCase} className="btn btn-primary mx-3 my-2">
           ConvertToUpperCase
         </button>
-        <button  onClick = {changeToLoCase} className="btn btn-primary">
+        <button  onClick = {changeToLoCase} className="btn btn-primary mx-3 my-2">
           ConvertToLowerCase
         </button>
         <div className="container my-3">

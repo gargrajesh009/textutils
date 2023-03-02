@@ -69,9 +69,9 @@ export default function Navbar(Props) {
                 Search
               </button>
             </form> */}
-            <div style={color1} className="mx-2" onClick = {Props.changebg1}></div>
-            <div style={color2} className="mx-2" onClick = {Props.changebg2}></div>
-            <div style={color3} className="mx-2" onClick = {Props.changebg3}></div>
+            <div style={color1} className="mx-2 my-2" onClick = {Props.changebg1}></div>
+            <div style={color2} className="mx-2 my-2" onClick = {Props.changebg2}></div>
+            <div style={color3} className="mx-2 my-2" onClick = {Props.changebg3}></div>
             <div className="form-check form-switch">
               <input
                 className="form-check-input"
